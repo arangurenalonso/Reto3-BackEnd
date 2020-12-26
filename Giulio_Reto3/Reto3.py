@@ -1,8 +1,6 @@
-numnotas = input(int('Ingrese la cantidad de notas que desea ingresar al sistema'))
-
-while True
+while True:
     try:
-            comprobador = numnotas / 2
+            numnotas = int(input('Ingrese la cantidad de notas que desea ingresar al sistema\n'))
             break
     except ValueError as e:
             print('Por favor Ingrese un número')
@@ -11,12 +9,12 @@ while True
 Listanotas = []
 listanotas2 = []
 
-for i in numnotas:
-    nombre = input('Ingrese el nombre del alumno')
-    nota = input(int('Ingrese la nota del alumno'))
-    dict = {'Nombre' : nombre, 'Nota' : nota)
+for i in range(0,numnotas,1):
+    nombre = input('Ingrese el nombre del alumno\n')
+    nota = int(input('Ingrese la nota del alumno\n'))
+    dict = {'Nombre' : nombre, 'Nota' : nota}
     Listanotas.append(dict) 
-    Listanotas2.append(nota)
+    listanotas2.append(nota)
     i += 1
 
 notamayor = max(listanotas2)
@@ -28,24 +26,6 @@ print(f'La nota mayor es {notamayor}')
 print(f'La nota menor es {notamenor}')
 print(f'La nota promedio es {notapromedio}')
  
-notabuscada = input(int('Ingrese la nota a buscar'))
-
-while True
-    try:
-            comprobador2 = numnotas / 2
-            break
-    except ValueError as z:
-            print('Por favor Ingrese un número')
-        
-
-nombresconnotas[]
-
-for notabuscada in listanotas2:
-    matchnombre = listanotas2.get('Nombre')
-    nombresconnotas.append(matchnombre)
-
-
-
 
 
 
